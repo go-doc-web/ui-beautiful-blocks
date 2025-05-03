@@ -1,0 +1,156 @@
+:root {
+  /* color */
+  --dark: #333;
+  --grey: #bdc9d9;
+  --ligth: #ffffff;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.section {
+  padding: 10px 0 10px;
+}
+/* Mountain */
+.section-mountain {
+  padding-top: 3.125rem;
+  padding-bottom: 18.75rem;
+  background-color: var(--dark);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('./assets/images/mountain-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .section-mountain {
+  padding-top: 3.125rem;
+  padding-bottom: 18.75rem;
+
+  background-color: var(--dark);
+  background-image: url('./assets/images/mountain-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section-mountain::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  backdrop-filter: brightness(80%) brightness(1);
+  z-index: 2;
+} */
+
+@media screen and (max-width: 768px) {
+  .section-mountain {
+    padding-top: 2.5rem;
+    padding-bottom: 15.75rem;
+  }
+}
+.container-mountain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-mountain {
+    max-width: calc(100% - 10vw);
+  }
+}
+
+.mountain-title,
+.mountain-subtitle {
+  display: inline-block;
+  font-weight: 300;
+  margin: 0 auto;
+  color: var(--ligth);
+  text-transform: uppercase;
+  /* text-align: center; */
+  z-index: 10;
+}
+
+.title-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .line {
+    width: 30vw;
+  }
+}
+
+.line {
+  height: 3px;
+  background-color: var(--ligth);
+}
+
+.mountain-title {
+  font-size: clamp(2rem, 7vw, 4rem);
+  letter-spacing: 0.8em;
+  max-width: 600px;
+  position: relative;
+}
+
+.mountain-title span {
+  letter-spacing: 0em;
+}
+
+.mountain-subtitle {
+  font-size: clamp(0.5rem, 2.5vw, 1rem);
+  letter-spacing: 0.4em;
+  margin-top: clamp(0.5rem, 2vw, 1.5rem);
+}
