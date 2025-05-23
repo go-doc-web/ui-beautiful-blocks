@@ -1,68 +1,13 @@
-:root {
-  /* color */
-  --dark: #333;
-  --grey: #bdc9d9;
-  --ligth: #ffffff;
-}
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-}
-
-.container {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-@media screen and (max-width: 1200px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    max-width: 100%;
-  }
-}
-
-.section {
-  padding: 10px 0 10px;
-}
 /* Mountain */
 .section-mountain {
-  padding-top: 3.125rem;
+  padding-top: 9rem;
   padding-bottom: 18.75rem;
   background-color: var(--dark);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('./assets/images/mountain-bg.jpg');
+    url('../assets/images/mountain-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
